@@ -103,25 +103,3 @@ set laststatus=2
 " Format the status line
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
-
-""""""""""""""""""""""""""""""
-" => Load pathogen paths
-""""""""""""""""""""""""""""""
-if filereadable(expand("~/.vim/autoload/pathogen.vim"))
-    runtime! autoload/pathogen.vim
-    if exists("g:loaded_pathogen")
-        execute pathogen#infect()
-        call pathogen#helptags()
-    endif
-endif
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Nerd Tree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "left"
-let NERDTreeShowHidden=0
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=35
-map <C-n> :NERDTreeToggle<cr>
-
