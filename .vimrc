@@ -39,6 +39,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Add a bit extra margin to the left
+set foldcolumn=1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -99,4 +102,16 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+
+
+""""""""""""""""""""""""""""""
+" => Load pathogen paths
+""""""""""""""""""""""""""""""
+if filereadable(expand("~/.vim/autoload/pathogen.vim"))
+    runtime! autoload/pathogen.vim
+    if exists("g:loaded_pathogen")
+        execute pathogen#infect()
+        call pathogen#helptags()
+    endif
+endif
 
