@@ -18,7 +18,7 @@ set autoread
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
-"Always show current position
+" Always show current position
 set ruler
 
 " Ignore case when searching
