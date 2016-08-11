@@ -115,3 +115,13 @@ if filereadable(expand("~/.vim/autoload/pathogen.vim"))
     endif
 endif
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nerd Tree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:NERDTreeWinPos = "left"
+let NERDTreeShowHidden=0
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+let g:NERDTreeWinSize=35
+map <C-n> :NERDTreeToggle<cr>
+
