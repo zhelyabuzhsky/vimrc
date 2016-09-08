@@ -11,6 +11,10 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ','
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -94,6 +98,16 @@ set si "Smart indent
 set wrap "Wrap lines
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around, tabs, windows and buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>t<leader> :tabnext<cr>
+
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
@@ -111,9 +125,9 @@ set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:
 execute pathogen#infect()
 
 " Nerd Tree
-let g:NERDTreeWinPos = "right"
+let NERDTreeWinPos = 'right'
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=35
-map <C-n> :NERDTreeToggle<CR>
+let NERDTreeWinSize=35
+map <leader>nn :NERDTreeToggle<cr>
 
