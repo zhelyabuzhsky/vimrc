@@ -11,3 +11,7 @@ Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
     cd ~/.vim/bundle && \
     git clone https://github.com/scrooloose/nerdtree.git
 
+### [Git gutter](https://github.com/airblade/vim-gitgutter)
+    cd ~/.vim/bundle && \
+    git clone git://github.com/airblade/vim-gitgutter.git
+

@@ -172,3 +172,8 @@ map <leader>nn :NERDTreeToggle<cr>
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Git gutter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
