@@ -25,6 +25,13 @@ set so=7
 " Always show current position
 set ruler
 
+" A buffer becomes hidden when it is abandoned
+set hid
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
 " Ignore case when searching
 set ignorecase
 
@@ -36,6 +43,14 @@ set hlsearch
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw 
+
+" For regular expressions turn magic on
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch 
+" How many tenths of a second to blink when matching brackets
+set mat=2
 
 " No annoying sound on errors
 set noerrorbells
@@ -107,6 +122,16 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>t<leader> :tabnext<cr>
 
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+" Switch CWD to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" Return to last edit position when opening files (You want this!)
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
 
 """"""""""""""""""""""""""""""
 " => Status line
@@ -116,6 +141,20 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Editing mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remap VIM 0 to first non-blank character
+map 0 ^
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
 
 
 """"""""""""""""""""""""""""""
