@@ -15,3 +15,7 @@ Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
     cd ~/.vim/bundle && \
     git clone git://github.com/airblade/vim-gitgutter.git
 
+### [PHP CS Fixer](https://github.com/stephpy/vim-php-cs-fixer)
+    cd ~/.vim/bundle && \
+    git clone git@github.com:stephpy/vim-php-cs-fixer.git
+

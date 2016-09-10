@@ -172,8 +172,14 @@ map <leader>nn :NERDTreeToggle<cr>
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Git gutter
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Git gutter
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+" PHP cs fixer
+let php_cs_fixer_level = "symfony"              " which level ?
+let php_cs_fixer_config = "default"             " configuration
+let php_cs_fixer_php_path = "php"               " Path to PHP
+let php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
+let php_cs_fixer_dry_run = 0                    " Call command with dry-run option
+let php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
 
