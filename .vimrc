@@ -179,6 +179,7 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 let php_cs_fixer_level = "symfony"              " which level ?
 let php_cs_fixer_config = "default"             " configuration
 let php_cs_fixer_php_path = "php"               " Path to PHP
+let php_cs_fixer_fixers_list = "-concat_without_spaces,concat_with_spaces,-pre_increment,-phpdoc_inline_tag"
 let php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by default (<leader>pcd)
 let php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
