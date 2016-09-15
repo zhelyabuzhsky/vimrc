@@ -19,3 +19,29 @@ Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
     cd ~/.vim/bundle && \
     git clone git@github.com:stephpy/vim-php-cs-fixer.git
 
+## Key Mappings
+
+Open new tab:
+    , + t + n
+
+Close tab:
+    , + t + c
+
+Next tab:
+    , + t + n
+
+Open a new tab with the current buffer's path:
+    , + t + e
+
+Switch CWD to the directory of the open buffer:
+    , + c + d
+
+Toggle paste mode on and off:
+    , + p + p
+
+Toggle NERD Tree:
+    , + n + n
+
+Toggle Git gutter:
+    , + d
+

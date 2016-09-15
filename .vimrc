@@ -118,7 +118,6 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>t<leader> :tabnext<cr>
 
