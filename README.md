@@ -53,3 +53,11 @@ Toggle Git gutter:
 
     , + d
 
+Fix current PHP file:
+
+    , + p + c + f
+
+Fix current PHP directory:
+
+    , + p + c + d
+
