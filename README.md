@@ -13,11 +13,16 @@ Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
 
 ### [Git gutter](https://github.com/airblade/vim-gitgutter)
     cd ~/.vim/bundle && \
-    git clone git://github.com/airblade/vim-gitgutter.git
+    git clone https://github.com/airblade/vim-gitgutter.git
 
 ### [PHP CS Fixer](https://github.com/stephpy/vim-php-cs-fixer)
     cd ~/.vim/bundle && \
-    git clone git@github.com:stephpy/vim-php-cs-fixer.git
+    git clone https://github.com/vim-php-cs-fixer.git
+
+### [AutoPEP8](https://github.com/tell-k/vim-autopep8)
+    cd ~/.vim/bundle && \
+    git clone https://github.com/tell-k/vim-autopep8.git
+
 
 ## Key Mappings
 
@@ -53,11 +58,15 @@ Toggle Git gutter:
 
     , + d
 
-Fix current PHP file:
+Autoformat current PHP file:
 
     , + p + c + f
 
-Fix current PHP directory:
+Autoformat current PHP directory:
 
     , + p + c + d
+
+Autoformat current Python file:
+
+    F8
 
