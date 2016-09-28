@@ -23,6 +23,11 @@ Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
     cd ~/.vim/bundle && \
     git clone https://github.com/tell-k/vim-autopep8.git
 
+### [JS Beutify](https://github.com/maksimr/vim-jsbeautify)
+    cd ~/.vim/bundle && \
+    git clone https://github.com/maksimr/vim-jsbeautify.git && \
+    cd vim-jsbeautify && \
+    git submodule update --init --recursive
 
 ## Key Mappings
 
