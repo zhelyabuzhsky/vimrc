@@ -174,24 +174,3 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Git gutter
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
-" PHP cs fixer
-let php_cs_fixer_level = "symfony"
-let php_cs_fixer_config = "default"
-let php_cs_fixer_php_path = "php"
-let php_cs_fixer_fixers_list = "-concat_without_spaces,concat_with_spaces,-pre_increment,-phpdoc_inline_tag"
-let php_cs_fixer_dry_run = 0
-let php_cs_fixer_verbose = 0
-autocmd FileType php noremap <silent><leader>f :call PhpCsFixerFixFile()<cr>
-
-" AutoPEP8
-let autopep8_disable_show_diff=1
-autocmd FileType python noremap <silent><leader>f :call Autopep8()<cr>
-
-" Js beutify
-autocmd FileType javascript vnoremap <buffer> <leader>f :call RangeJsBeautify()<cr>
-autocmd FileType json vnoremap <buffer> <leader>f :call RangeJsonBeautify()<cr>
-autocmd FileType jsx vnoremap <buffer> <leader>f :call RangeJsxBeautify()<cr>
-autocmd FileType html vnoremap <buffer> <leader>f :call RangeHtmlBeautify()<cr>
-autocmd FileType htmldjango vnoremap <buffer> <leader>f :call RangeHtmlBeautify()<cr>
-autocmd FileType css vnoremap <buffer> <leader>f :call RangeCSSBeautify()<cr>
-

@@ -15,20 +15,6 @@ Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
     cd ~/.vim/bundle && \
     git clone https://github.com/airblade/vim-gitgutter.git
 
-### [PHP CS Fixer](https://github.com/stephpy/vim-php-cs-fixer)
-    cd ~/.vim/bundle && \
-    git clone https://github.com/vim-php-cs-fixer.git
-
-### [AutoPEP8](https://github.com/tell-k/vim-autopep8)
-    cd ~/.vim/bundle && \
-    git clone https://github.com/tell-k/vim-autopep8.git
-
-### [JS Beutify](https://github.com/maksimr/vim-jsbeautify)
-    cd ~/.vim/bundle && \
-    git clone https://github.com/maksimr/vim-jsbeautify.git && \
-    cd vim-jsbeautify && \
-    git submodule update --init --recursive
-
 ## Key Mappings
 
 Open new tab:
@@ -62,16 +48,4 @@ Toggle NERD Tree:
 Toggle Git gutter:
 
     , + d
-
-Autoformat current PHP file:
-
-    , + p + c + f
-
-Autoformat current PHP directory:
-
-    , + p + c + d
-
-Autoformat current Python file:
-
-    F8
 
