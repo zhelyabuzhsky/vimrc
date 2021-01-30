@@ -1,5 +1,10 @@
 # My vimrc
+
 Inspired by [The Ultimate vimrc](https://github.com/amix/vimrc)
+
+## How to install
+
+    $ ln -rs .vimrc ~/.vimrc
 
 ## Key Mappings
 
