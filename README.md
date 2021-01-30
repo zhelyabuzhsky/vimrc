@@ -18,7 +18,7 @@ Close tab:
 
 Next tab:
 
-    , + t + n
+    , + t + ,
 
 Open a new tab with the current buffer's path:
 
